@@ -33,5 +33,3 @@ C:\Users\Andreas\Documents\Programming\MC-Manager\MCManager\obj\Debug\MCManager.
 C:\Users\Andreas\Documents\Programming\MC-Manager\MCManager\obj\Debug\MCManager.LoginInput.resources
 C:\Users\Andreas\Documents\Programming\MC-Manager\MCManager\obj\Debug\MCManager.Properties.Resources.resources
 C:\Users\Andreas\Documents\Programming\MC-Manager\MCManager\obj\Debug\MCManager.csproj.GenerateResource.Cache
-C:\Users\Jens\Documents\GitHub\MC-Manager\MCManager\obj\Debug\MCManager.MainWindow.resources
-C:\Users\Jens\Documents\GitHub\MC-Manager\MCManager\obj\Debug\MCManager.LoginInput.resources
