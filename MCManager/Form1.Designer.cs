@@ -87,6 +87,7 @@
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.ImageList = this.imageList1;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(388, 362);
@@ -98,9 +99,9 @@
             this.tabBackups.Controls.Add(this.panel2);
             this.tabBackups.Controls.Add(this.panel1);
             this.tabBackups.ImageKey = "drop-box-icon.png";
-            this.tabBackups.Location = new System.Drawing.Point(4, 23);
+            this.tabBackups.Location = new System.Drawing.Point(4, 42);
             this.tabBackups.Name = "tabBackups";
-            this.tabBackups.Size = new System.Drawing.Size(380, 335);
+            this.tabBackups.Size = new System.Drawing.Size(380, 316);
             this.tabBackups.TabIndex = 0;
             this.tabBackups.Text = "Backups";
             this.tabBackups.ToolTipText = "Backups";
@@ -117,7 +118,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 294);
+            this.panel2.Size = new System.Drawing.Size(380, 275);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -356,10 +357,10 @@
             this.tabLoginInfo.Controls.Add(this.txtLoginPassword);
             this.tabLoginInfo.Controls.Add(this.txtLoginName);
             this.tabLoginInfo.ImageKey = "Key.png";
-            this.tabLoginInfo.Location = new System.Drawing.Point(4, 23);
+            this.tabLoginInfo.Location = new System.Drawing.Point(4, 42);
             this.tabLoginInfo.Name = "tabLoginInfo";
             this.tabLoginInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLoginInfo.Size = new System.Drawing.Size(380, 335);
+            this.tabLoginInfo.Size = new System.Drawing.Size(380, 316);
             this.tabLoginInfo.TabIndex = 2;
             this.tabLoginInfo.Text = "Login Info";
             this.tabLoginInfo.UseVisualStyleBackColor = true;
@@ -433,10 +434,10 @@
             // 
             this.tabChangelog.Controls.Add(this.richTextBox1);
             this.tabChangelog.ImageKey = "text-file-icon.png";
-            this.tabChangelog.Location = new System.Drawing.Point(4, 23);
+            this.tabChangelog.Location = new System.Drawing.Point(4, 42);
             this.tabChangelog.Name = "tabChangelog";
             this.tabChangelog.Padding = new System.Windows.Forms.Padding(3);
-            this.tabChangelog.Size = new System.Drawing.Size(380, 335);
+            this.tabChangelog.Size = new System.Drawing.Size(380, 316);
             this.tabChangelog.TabIndex = 5;
             this.tabChangelog.Text = "Changelog";
             this.tabChangelog.UseVisualStyleBackColor = true;

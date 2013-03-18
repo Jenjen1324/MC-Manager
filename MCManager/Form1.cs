@@ -36,6 +36,10 @@ namespace MCManager
                 Size = new Size(240, 310);
                 CheckLoginInfo();
             }
+            else
+            {
+                Size = new Size(404, 390);
+            }
         }
 
         public void CheckLoginInfo()
