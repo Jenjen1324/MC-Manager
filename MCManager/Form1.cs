@@ -68,6 +68,7 @@ namespace MCManager
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DataHolder.StartPlugins(this);
             cbxNewBackup.Items.Clear();
             cbxNewBackup.Items.Add("New Backup");
             foreach (IBackupFormat format in BackupLoader.formats)
@@ -122,6 +123,7 @@ namespace MCManager
                     if (backup.GetFormat().GetType() == format.GetType())
                     {
                         TreeNode n = new TreeNode(backup.GetName());
+                        n.Tag = DataHolder.GetBackups().IndexOf(backup);
                         n.ToolTipText = backup.GetDescription();
                         n.Tag = i;
                         n.ImageKey = format.GetImageName();
@@ -135,7 +137,7 @@ namespace MCManager
 
         private void btnRestoreBackup_Click(object sender, EventArgs e)
         {
-            DataHolder.GetBackups().FindAll(b => treeView1.SelectedNode.Text == b.GetName()).ForEach(b => b.Extract());
+            DataHolder.GetBackups()[(int)treeView1.SelectedNode.Tag].Extract();
             MessageBox.Show("Backup restored");
         }
 

@@ -51,7 +51,7 @@ namespace MCManager
                         {
                             Process.Start(Data.updaterExe);
                             Thread.Sleep(100);
-                            return;
+                            Application.Exit();
                         }
                     }
                 });
@@ -66,6 +66,7 @@ namespace MCManager
             //{
                 DataHolder.mainWindow = new MainWindow();
                 Application.Run(DataHolder.mainWindow);
+                DataHolder.StopPlugins();
             //}
             //catch (Exception ex)
             //{
